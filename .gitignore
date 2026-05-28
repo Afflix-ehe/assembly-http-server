@@ -1,0 +1,6 @@
+# Compiled files
+server.o
+server
+
+# Test files
+/tmp/assembly-*
