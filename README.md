@@ -36,10 +36,10 @@ cat /tmp/output.txt
 
 ## How It Works
 
-`Client connects
+`Client connects`
 ↓
-`accept()
-`returns client fd``
+`accept()`
+`returns client fd`
 ↓
 `fork() creates child`
 ↓
