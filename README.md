@@ -37,17 +37,28 @@ cat /tmp/output.txt
 ## How It Works
 
 `Client connects`
+
 ↓
+
 `accept()`
 `returns client fd`
+
 ↓
+
 `fork() creates child`
+
 ↓
+
 ├─` Parent: close client fd, loop back to accept()`
+
 └─ `Child: parse HTTP request`
+
 ├─ `GET: open file → read → send contents`
+
 └─ `POST: parse body → open file → write data`
+
 ↓
+
 `close client fd, exit`
 
 ## Architecture
